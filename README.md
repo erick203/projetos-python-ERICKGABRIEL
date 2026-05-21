@@ -35,7 +35,6 @@ O projeto está preparado para rodar localmente ou ser hospedado no **GitHub Pag
 │   ├── index.html            # Interface visual com formulário e listagem
 │   └── app.js                # Lógica de consumo da API e gerenciamento de estado
 └── README.md 
----
 
 ## 🚀 Como Executar o Projeto Localmente
 
