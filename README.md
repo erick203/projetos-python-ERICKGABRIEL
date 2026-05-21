@@ -36,11 +36,11 @@ O projeto está preparado para rodar localmente ou ser hospedado no **GitHub Pag
 │   └── app.js                # Lógica de consumo da API e gerenciamento de estado
 └── README.md 
 
-## 🚀 Como Executar o Projeto Localmente
+ 🚀 Como Executar o Projeto Localmente
 
-### 1. Configurar e rodar o Backend
+1. Configurar e rodar o Backend
 
-1. Certifique-se de ter o Python instalado em sua máquina.
-2. Instale as dependências necessárias executando o seguinte comando no seu terminal:
-   ```bash
-   pip install fastapi sqlalchemy pydantic uvicorn
+  1. Certifique-se de ter o Python instalado em sua máquina.
+  2. Instale as dependências necessárias executando o seguinte comando no seu terminal:
+      bash
+      pip install fastapi sqlalchemy pydantic uvicorn
