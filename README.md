@@ -1,38 +1,37 @@
-# FastAPI CRUD de Produtos
+# 📦 FastAPI CRUD de Produtos com Front-end
 
-Este é um projeto de exemplo que implementa uma API REST funcional para o gerenciamento (CRUD) de produtos. Ele utiliza a arquitetura recomendada pela documentação oficial do **FastAPI**, integrando validação de dados com **Pydantic** e persistência em banco de dados utilizando **SQLAlchemy**.
+Este projeto consiste em uma API REST funcional para o gerenciamento (CRUD) de produtos integrada a uma interface de usuário (Front-end) responsiva. A aplicação utiliza a arquitetura recomendada pela documentação oficial do **FastAPI**, integrando validação de dados com **Pydantic** e persistência em banco de dados utilizando **SQLAlchemy**.
+
+O projeto está preparado para rodar localmente ou ser hospedado no **GitHub Pages**.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **FastAPI:** Framework web moderno, rápido (alta performance) e fácil de usar.
-* **SQLAlchemy:** ORM SQL para mapeamento de entidades do banco de dados.
-* **Pydantic:** Validação de dados e gerenciamento de configurações via Schemas.
-* **SQLite:** Banco de dados relacional leve (em arquivo local).
+### Backend
+* **FastAPI:** Framework web moderno e de alta performance.
+* **SQLAlchemy:** ORM SQL para mapeamento e manipulação do banco de dados.
+* **Pydantic:** Validação de dados de entrada e saída via Schemas.
+* **SQLite:** Banco de dados relacional leve armazenado em arquivo local.
+
+### Frontend
+* **HTML5 & JavaScript (Vanilla):** Para estruturação e consumo assíncrono da API via `fetch`.
+* **Tailwind CSS:** Framework utilitário para estilização moderna e responsiva.
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-O projeto está estruturado como um pacote Python (`sql_app`), contendo os seguintes arquivos principais:
-
-* `__init__.py`: Arquivo que transforma o diretório em um pacote Python.
-* `database.py`: Configura a conexão com o banco de dados SQLite e a sessão (`SessionLocal`).
-* `models.py`: Define o modelo de dados da tabela `products` no banco.
-* `schemas.py`: Contém os schemas do Pydantic para validação de entrada e saída de dados.
-* `crud.py`: Implementa as funções com a lógica de criação, leitura e deleção no banco.
-* `main.py`: Inicializa o aplicativo, configura o CORS e expõe as rotas HTTP (endpoints).
-
----
-
-## 🚀 Como Executar o Projeto
-
-### 1. Clonar ou baixar o projeto
-Certifique-se de que todos os arquivos (`main.py`, `models.py`, etc.) estejam na mesma pasta do seu projeto.
-
-### 2. Instalar as dependências
-Você precisará do FastAPI, SQLAlchemy e de um servidor ASGI como o `uvicorn`. Execute no seu terminal:
-
-```bash
-pip install fastapi sqlalchemy pydantic uvicorn
+```text
+├── sql_app/                  # Diretório do Backend (Pacote Python)
+│   ├── __init__.py           # Identifica a pasta como um pacote Python
+│   ├── database.py           # Configuração da conexão SQLite e sessões do banco
+│   ├── models.py             # Modelo de dados da tabela 'products'
+│   ├── schemas.py            # Schemas Pydantic para validação de dados
+│   ├── crud.py               # Funções de persistência (Create, Read, Delete)
+│   └── main.py               # Inicialização da API, rotas HTTP e CORS
+│
+├── frontend/                 # Diretório do Front-end (GitHub Pages)
+│   ├── index.html            # Interface visual com formulário e listagem
+│   └── app.js                # Lógica de consumo da API e gerenciamento de estado
+└── README.md
